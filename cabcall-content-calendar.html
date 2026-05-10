@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CabCall Experts · 7-Day Content Calendar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #1266AE;
+    --blue-dark: #0C65AE;
+    --blue-darker: #084E87;
+    --blue-deepest: #052F54;
+    --blue-50: #F0F6FB;
+    --blue-100: #DDEAF5;
+    --blue-200: #B8D2E8;
+    --blue-300: #8FB5D9;
+    --white: #ffffff;
+    --ink: #0F1E2E;
+    --ink-80: #2B3B4D;
+    --ink-60: #5A6B7C;
+    --ink-40: #93A0AD;
+    --ink-20: #C9D0D8;
+    --line: rgba(15, 30, 46, 0.06);
+    --line-mid: rgba(15, 30, 46, 0.1);
+    --line-strong: rgba(15, 30, 46, 0.16);
+    --surface: #FAFBFD;
+    --surface-2: #F4F6FA;
+    --display: 'Montserrat', sans-serif;
+    --body: 'Roboto', -apple-system, sans-serif;
+    --max-width: 1200px;
+    --page-pad: 48px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--body);
+    background: var(--white);
+    color: var(--ink);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--page-pad);
+  }
+
+  /* ============== TOP RIBBON ============== */
+  .ribbon {
+    background: var(--blue-deepest);
+    color: rgba(255,255,255,0.85);
+    font-family: var(--display);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    padding: 11px 0;
+    text-transform: uppercase;
+  }
+  .ribbon-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--page-pad);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ribbon-dot {
+    display: inline-block;
+    width: 5px; height: 5px;
+    background: #4FD18C;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0 0 0 0 rgba(79,209,140,0.7);
+    animation: pulse 2s ease-out infinite;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(79,209,140,0.7); }
+    70% { box-shadow: 0 0 0 6px rgba(79,209,140,0); }
+    100% { box-shadow: 0 0 0 0 rgba(79,209,140,0); }
+  }
+
+  /* ============== HEADER NAV ============== */
+  .nav {
+    border-bottom: 1px solid var(--line);
+    padding: 22px 0;
+    background: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: saturate(180%) blur(12px);
+    background: rgba(255,255,255,0.92);
+  }
+  .nav-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--page-pad);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .logo-mark {
+    width: 36px; height: 36px;
+    background: var(--blue);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+  }
+  .logo-text {
+    font-family: var(--display);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+  .logo-text .sub {
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--ink-40);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 2px;
+  }
+  .nav-meta {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-family: var(--display);
+    font-size: 12px;
+    color: var(--ink-60);
+    font-weight: 500;
+  }
+  .nav-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .nav-meta-item::before {
+    content: '';
+    width: 5px; height: 5px;
+    background: var(--blue);
+    border-radius: 50%;
+  }
+
+  /* ============== HERO ============== */
+  .hero {
+    padding: 96px 0 88px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(18,102,174,0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(18,102,174,0.035) 1px, transparent 1px);
+    background-size: 72px 72px;
+    background-position: 0 0;
+    pointer-events: none;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 30%, transparent 80%);
+  }
+  .hero-inner {
+    position: relative;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--page-pad);
+    z-index: 2;
+  }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--display);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--blue);
+    margin-bottom: 28px;
+  }
+  .eyebrow-line {
+    width: 32px;
+    height: 1px;
+    background: var(--blue);
+  }
+  .hero h1 {
+    font-family: var(--display);
+    font-size: clamp(44px, 6.5vw, 84px);
+    line-height: 1.02;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    margin-bottom: 28px;
+    max-width: 880px;
+    color: var(--ink);
+  }
+  .hero h1 .accent {
+    color: var(--blue);
+    font-weight: 700;
+    font-style: normal;
+    position: relative;
+    display: inline-block;
+  }
+  .hero h1 .accent::after {
+    content: '';
+    position: absolute;
+    bottom: 6px; left: 0;
+    width: 100%;
+    height: 6px;
+    background: var(--blue-100);
+    z-index: -1;
+  }
+  .hero-sub {
+    font-family: var(--body);
+    font-size: 18px;
+    color: var(--ink-60);
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 56px;
+    font-weight: 400;
+  }
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--line-mid);
+    padding-top: 32px;
+    max-width: 780px;
+  }
+  .hero-stat {
+    padding-right: 28px;
+    border-right: 1px solid var(--line);
+  }
+  .hero-stat:last-child { border-right: none; }
+  .hero-stat-num {
+    font-family: var(--display);
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1;
+    margin-bottom: 8px;
+    letter-spacing: -0.03em;
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+  }
+  .hero-stat-num .unit {
+    font-size: 18px;
+    color: var(--blue);
+    font-weight: 600;
+  }
+  .hero-stat-label {
+    font-family: var(--display);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-40);
+    font-weight: 600;
+  }
+
+  /* ============== SECTION HEADER ============== */
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 48px;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .section-header-left { flex: 1; min-width: 280px; }
+  .section-title {
+    font-family: var(--display);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    color: var(--ink);
+    max-width: 640px;
+  }
+  .section-desc {
+    color: var(--ink-60);
+    font-size: 15px;
+    max-width: 380px;
+    line-height: 1.65;
+  }
+
+  /* ============== NARRATIVE ARC ============== */
+  .arc-section {
+    background: var(--surface);
+    padding: 80px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .arc-flow {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0;
+    position: relative;
+  }
+  .arc-line {
+    position: absolute;
+    top: 32px;
+    left: 7.14%;
+    right: 7.14%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, var(--blue-200) 20%, var(--blue-200) 80%, transparent 100%);
+    z-index: 0;
+  }
+  .arc-node {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .arc-circle {
+    width: 64px; height: 64px;
+    margin: 0 auto 18px;
+    background: var(--white);
+    border: 1px solid var(--blue-200);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--display);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--blue);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    letter-spacing: -0.01em;
+    position: relative;
+  }
+  .arc-circle::before {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    transition: border-color 0.4s;
+  }
+  .arc-node:hover .arc-circle {
+    background: var(--blue);
+    border-color: var(--blue);
+    color: var(--white);
+  }
+  .arc-node:hover .arc-circle::before {
+    border-color: var(--blue-200);
+  }
+  .arc-phase {
+    font-family: var(--display);
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--ink);
+    letter-spacing: -0.005em;
+  }
+  .arc-day {
+    font-family: var(--display);
+    font-size: 10px;
+    color: var(--ink-40);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+  }
+
+  /* ============== DAYS GRID ============== */
+  .days-section {
+    padding: 96px 0 112px;
+    background: var(--white);
+  }
+  .days-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .day-card {
+    background: var(--white);
+    border: 1px solid var(--line-mid);
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .day-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--blue);
+    box-shadow:
+      0 1px 2px rgba(15,30,46,0.04),
+      0 12px 32px -12px rgba(18,102,174,0.18);
+  }
+  .day-card-header {
+    padding: 22px 24px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    border-bottom: 1px solid var(--line);
+  }
+  .day-num-block {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .day-num {
+    font-family: var(--display);
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+  .day-num-suffix {
+    font-family: var(--display);
+    font-size: 12px;
+    color: var(--ink-40);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+  }
+  .day-phase {
+    font-family: var(--display);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 5px 10px;
+    border-radius: 100px;
+    font-weight: 600;
+    background: var(--blue-50);
+    color: var(--blue-dark);
+    white-space: nowrap;
+  }
+  .day-card-body {
+    padding: 22px 24px 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .day-weekday {
+    font-family: var(--display);
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-40);
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .day-title {
+    font-family: var(--display);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+  .day-hook {
+    font-family: var(--body);
+    font-size: 14px;
+    color: var(--ink-60);
+    line-height: 1.55;
+    margin-bottom: 24px;
+    flex: 1;
+    padding-left: 14px;
+    border-left: 2px solid var(--blue-100);
+    font-weight: 400;
+  }
+  .day-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    font-family: var(--display);
+    font-size: 11px;
+    color: var(--ink-60);
+    font-weight: 600;
+  }
+  .day-meta-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .day-meta-tag::before {
+    content: '';
+    width: 14px;
+    height: 1.5px;
+    background: var(--blue);
+  }
+  .day-meta-arrow {
+    color: var(--blue);
+    font-size: 18px;
+    transition: transform 0.3s;
+    line-height: 1;
+  }
+  .day-card:hover .day-meta-arrow { transform: translateX(4px); }
+
+  /* ============== MODAL ============== */
+  .modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 30, 46, 0.55);
+    backdrop-filter: blur(8px);
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow-y: auto;
+    padding: 48px 20px;
+  }
+  .modal-backdrop.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .modal {
+    background: var(--white);
+    border-radius: 20px;
+    max-width: 1080px;
+    width: 100%;
+    overflow: hidden;
+    transform: translateY(24px) scale(0.98);
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    margin-bottom: 48px;
+    box-shadow: 0 40px 100px -20px rgba(15,30,46,0.4);
+  }
+  .modal-backdrop.active .modal { transform: translateY(0) scale(1); }
+  .modal-header {
+    background: var(--blue-deepest);
+    color: var(--white);
+    padding: 44px 48px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .modal-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .modal-header::after {
+    content: '';
+    position: absolute;
+    top: -150px; right: -100px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(18,102,174,0.6), transparent 65%);
+    pointer-events: none;
+  }
+  .modal-header-inner { position: relative; z-index: 1; max-width: 720px; }
+  .modal-close {
+    position: absolute;
+    top: 24px; right: 24px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: var(--white);
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    z-index: 2;
+    font-family: var(--display);
+  }
+  .modal-close:hover { background: rgba(255,255,255,0.18); }
+  .modal-day-tag {
+    font-family: var(--display);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--blue-200);
+    margin-bottom: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .modal-day-tag::before {
+    content: '';
+    width: 24px;
+    height: 1px;
+    background: var(--blue-200);
+  }
+  .modal-title {
+    font-family: var(--display);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    margin-bottom: 14px;
+  }
+  .modal-hook {
+    font-family: var(--body);
+    font-size: 16.5px;
+    color: rgba(255,255,255,0.78);
+    max-width: 640px;
+    line-height: 1.55;
+    font-weight: 300;
+  }
+  .modal-body {
+    padding: 44px 48px 48px;
+  }
+  .modal-section-label {
+    font-family: var(--display);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--blue);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+  }
+  .modal-section-label::before {
+    content: '';
+    width: 24px; height: 1.5px;
+    background: var(--blue);
+  }
+
+  /* SLIDES */
+  .slides-row {
+    display: grid;
+    gap: 18px;
+    margin-bottom: 44px;
+  }
+  .slides-row.cols-2 { grid-template-columns: repeat(2, 1fr); max-width: 640px; }
+  .slides-row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .slide-mock {
+    aspect-ratio: 4 / 5;
+    border-radius: 14px;
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--line-mid);
+  }
+  .slide-mock.blue {
+    background: var(--blue);
+    color: var(--white);
+    border-color: var(--blue);
+  }
+  .slide-mock.blue-dark {
+    background: var(--blue-deepest);
+    color: var(--white);
+    border-color: var(--blue-deepest);
+  }
+  .slide-mock.light {
+    background: var(--white);
+    color: var(--ink);
+  }
+  .slide-mock.tint {
+    background: var(--blue-50);
+    color: var(--ink);
+    border-color: var(--blue-100);
+  }
+  .slide-counter {
+    font-family: var(--display);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.65;
+    margin-bottom: 20px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .slide-counter::before {
+    content: '';
+    width: 18px;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.5;
+  }
+  .slide-content {
+    font-family: var(--body);
+    font-size: 14px;
+    line-height: 1.55;
+    white-space: pre-line;
+    flex: 1;
+  }
+  .slide-content b {
+    font-weight: 700;
+    color: inherit;
+  }
+  .slide-mock.light .slide-content b,
+  .slide-mock.tint .slide-content b { color: var(--blue); }
+  .slide-mock.blue .slide-content b,
+  .slide-mock.blue-dark .slide-content b { color: var(--white); }
+  .slide-footer {
+    font-family: var(--display);
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+  }
+
+  /* CAPTION */
+  .caption-block {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 28px 32px;
+    margin-bottom: 12px;
+    position: relative;
+  }
+  .caption-block::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 24px; bottom: 24px;
+    width: 3px;
+    background: var(--blue);
+    border-radius: 0 2px 2px 0;
+  }
+  .caption-text {
+    font-family: var(--body);
+    font-size: 15px;
+    line-height: 1.75;
+    white-space: pre-line;
+    color: var(--ink-80);
+  }
+
+  /* META PANELS */
+  .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    margin-bottom: 44px;
+    background: var(--line-mid);
+    border: 1px solid var(--line-mid);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .meta-cell {
+    background: var(--white);
+    padding: 18px 22px;
+  }
+  .meta-cell-label {
+    font-family: var(--display);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-40);
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .meta-cell-value {
+    font-family: var(--display);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+
+  /* PLATFORM SWITCHER */
+  .platform-tabs {
+    display: inline-flex;
+    gap: 0;
+    background: var(--surface);
+    padding: 4px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    border: 1px solid var(--line);
+  }
+  .platform-tab {
+    background: transparent;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: var(--display);
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--ink-60);
+    transition: all 0.25s;
+    letter-spacing: -0.005em;
+  }
+  .platform-tab.active {
+    background: var(--ink);
+    color: var(--white);
+  }
+
+  /* FOOTER */
+  .footer {
+    background: var(--blue-deepest);
+    color: rgba(255,255,255,0.7);
+    padding: 72px 0 40px;
+    margin-top: 0;
+    font-family: var(--body);
+    position: relative;
+    overflow: hidden;
+  }
+  .footer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse 70% 50% at 50% 50%, black 30%, transparent 80%);
+  }
+  .footer-inner {
+    position: relative;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--page-pad);
+  }
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .footer-brand {
+    font-family: var(--display);
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 6px;
+    letter-spacing: -0.025em;
+  }
+  .footer-tagline {
+    font-size: 13.5px;
+    max-width: 360px;
+    line-height: 1.6;
+  }
+  .footer-meta {
+    text-align: right;
+    font-family: var(--display);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .footer-meta-line { margin-bottom: 6px; }
+  .footer-meta-line.dim { opacity: 0.55; }
+  .footer-bottom {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .swatch-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .swatch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--display);
+    font-size: 10.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .swatch-chip {
+    width: 14px; height: 14px;
+    border-radius: 3px;
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+  .footer-version {
+    font-family: var(--display);
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 500;
+    opacity: 0.7;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 980px) {
+    :root { --page-pad: 32px; }
+    .days-grid { grid-template-columns: repeat(2, 1fr); }
+    .section-title { font-size: 30px; }
+  }
+  @media (max-width: 720px) {
+    :root { --page-pad: 24px; }
+    .ribbon-inner { font-size: 10px; }
+    .nav-meta { display: none; }
+    .hero { padding: 60px 0 60px; }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 12px; padding-top: 24px; }
+    .hero-stat { border-right: none; padding-right: 0; }
+    .hero-stat:nth-child(1), .hero-stat:nth-child(2) {
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    .hero-stat:nth-child(odd) { padding-right: 16px; border-right: 1px solid var(--line); }
+    .arc-section, .days-section { padding: 56px 0; }
+    .arc-flow { grid-template-columns: repeat(4, 1fr); gap: 28px 0; }
+    .arc-line { display: none; }
+    .days-grid { grid-template-columns: 1fr; }
+    .section-header { margin-bottom: 32px; }
+    .modal-backdrop { padding: 0; }
+    .modal { border-radius: 0; margin-bottom: 0; }
+    .modal-header { padding: 56px 24px 32px; }
+    .modal-title { font-size: 28px; }
+    .modal-body { padding: 32px 24px 36px; }
+    .slides-row.cols-2, .slides-row.cols-3 { grid-template-columns: 1fr; }
+    .slides-row.cols-2 { max-width: none; }
+    .meta-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer { padding: 48px 0 32px; }
+    .footer-top, .footer-bottom { flex-direction: column; align-items: flex-start; }
+    .footer-meta { text-align: left; }
+  }
+
+  @media print {
+    .modal-backdrop, .ribbon, .nav { display: none; }
+    body { background: white; }
+  }
+</style>
+</head>
+<body>
+
+<div class="ribbon">
+  <div class="ribbon-inner">
+    <span><span class="ribbon-dot"></span>Strategic Content Plan · Active</span>
+    <span>Week 01 · Internal Review</span>
+  </div>
+</div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="logo">
+      <div class="logo-mark">CC</div>
+      <div class="logo-text">
+        CabCall Experts
+        <span class="sub">Social Strategy</span>
+      </div>
+    </div>
+    <div class="nav-meta">
+      <span class="nav-meta-item">7-Day Calendar</span>
+      <span class="nav-meta-item">v1.0</span>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">
+      <span class="eyebrow-line"></span>
+      B2B Social Strategy · Week 01
+    </div>
+    <h1>The hidden cost<br>of a <span class="accent">ringing phone.</span></h1>
+    <p class="hero-sub">A seven-day content narrative built to surface a revenue problem nobody measures, dismantle the default solution, and convert serious operators into auditable leads.</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">07</div>
+        <div class="hero-stat-label">Days</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">18</div>
+        <div class="hero-stat-label">Slides</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">03</div>
+        <div class="hero-stat-label">Platforms</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">01</div>
+        <div class="hero-stat-label">Narrative</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="arc-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-header-left">
+        <div class="eyebrow"><span class="eyebrow-line"></span>The arc</div>
+        <h2 class="section-title">One story across seven days.</h2>
+      </div>
+      <p class="section-desc">Each day moves the audience one step closer to the audit offer — from awareness to authority to action.</p>
+    </div>
+    <div class="arc-flow" id="arc-flow">
+      <div class="arc-line"></div>
+    </div>
+  </div>
+</section>
+
+<section class="days-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-header-left">
+        <div class="eyebrow"><span class="eyebrow-line"></span>The calendar</div>
+        <h2 class="section-title">Tap any day to preview the post.</h2>
+      </div>
+      <p class="section-desc">Carousel copy, captions for Instagram, Facebook and LinkedIn, plus the strategic goal each post ladders to.</p>
+    </div>
+    <div class="days-grid" id="days-grid"></div>
+  </div>
+</section>
+
+<div class="modal-backdrop" id="modal-backdrop">
+  <div class="modal" id="modal"></div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">CabCall Experts</div>
+        <div class="footer-tagline">Growth partner for taxi & transport operators across the UK, United States, and Australia.</div>
+      </div>
+      <div class="footer-meta">
+        <div class="footer-meta-line">Prepared by Social Strategy</div>
+        <div class="footer-meta-line dim">Confidential · Internal use only</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="swatch-row">
+        <div class="swatch"><span class="swatch-chip" style="background:#1266AE;"></span>#1266AE</div>
+        <div class="swatch"><span class="swatch-chip" style="background:#0C65AE;"></span>#0C65AE</div>
+        <div class="swatch"><span class="swatch-chip" style="background:#ffffff;"></span>#FFFFFF</div>
+      </div>
+      <div class="footer-version">v1.0 · 7-day plan · May 2026</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const DAYS = [
+  {
+    n: 1, day: "Monday", phase: "Problem",
+    title: "The provocation",
+    hook: "Your phone rang 47 times last night. You answered 19.",
+    goal: "Awareness",
+    format: "Carousel · 3 slides",
+    slides: [
+      { tone: "blue", h: "Hook", body: "Your phone rang <b>47 times</b> last night.\n\nYou answered <b>19</b>.\n\nWant to know what the other 28 just cost you?" },
+      { tone: "light", h: "Reality", body: "Every taxi business is losing money in the same exact spot.\n\nNot fuel. Not drivers. Not your app.\n\nIt's the calls between 11pm Saturday and 4am Sunday.\n\nMost operators are off by <b>15–25%</b> from what they think their answer rate is." },
+      { tone: "blue-dark", h: "Setup", body: "That's not a gap.\n\nThat's a <b>leak</b>.\n\nEvery missed call is a customer you'll never see again.\n\n— Day 1 of 7 —" }
+    ],
+    caption: "Be honest. Do you actually know your weekend answer rate?\n\nMost operators don't. The real number lands between 23–40% missed during peak hours.\n\nThat's money walking out the door every single weekend.\n\nHow many calls do you think your team missed last weekend?",
+    linkedin: "Most taxi operators I speak with can tell me their fuel spend to two decimal places. Almost none of them can tell me their answer rate.\n\nThat's the problem.\n\nAcross the operators we audit in the UK, US, and Australia, we consistently see 23–40% of inbound calls go unanswered during peak demand windows. At an average fare of £18 / $24 / AU$32, that's £15,000+ in unrealized monthly revenue. Per operator.\n\nIt doesn't appear on any P&L. It doesn't trigger any alert. It's the most expensive line item in the business — and it's effectively invisible.\n\nDay 1 of 7. What's your current answer rate during peak hours?"
+  },
+  {
+    n: 2, day: "Tuesday", phase: "Diagnosis",
+    title: "The diagnosis",
+    hook: "There are three hours in your week that decide whether you grow or stall.",
+    goal: "Authority",
+    format: "Carousel · 3 slides",
+    slides: [
+      { tone: "blue", h: "Hook", body: "There are <b>three hours</b> in your week that decide whether you grow or stall.\n\nMost operators can't name them." },
+      { tone: "light", h: "Three windows", body: "🌙 <b>Friday 11:47 PM</b>\nPeak bookings. One operator. Calls 4, 5, 6 → voicemail.\n\n🌑 <b>Sunday 2:15 AM</b>\nHighest fare-value window. Coverage: a part-timer overwhelmed by 1:30.\n\n☀️ <b>Tuesday 7:03 AM</b>\nSchool run. Airport. Corporate. Morning shift logs in at 7:30." },
+      { tone: "tint", h: "Diagnosis", body: "A taxi business isn't built on its strongest hour.\n\nIt's <b>capped by its weakest one</b>.\n\nAnd right now, your weakest hour is also your most profitable one." }
+    ],
+    caption: "Three hours. Three windows. Hundreds of bookings.\n\nGone to whoever picked up first.\n\nWhich of those three windows is your weakest right now?\n\nDrop a 🌙 if overnight is your gap. Drop a ☀️ if it's the morning rush.",
+    linkedin: "Every taxi business has three hours that decide whether it grows or stalls. Most operators can't name them.\n\nFrom the data we work with across UK, US, and Australian fleets, the three highest-leverage windows are remarkably consistent:\n\n→ Friday 23:00–01:00 (peak weekend volume, single-operator coverage)\n→ Sunday 01:00–04:00 (highest average fare value, lowest staffing)\n→ Weekday 06:30–07:30 (school run + airport + corporate, before morning shift logs in)\n\nThese aren't edge cases. They're the structural weak points in nearly every in-house dispatch model.\n\nDay 2 of 7. Which of those three windows is your biggest gap?"
+  },
+  {
+    n: 3, day: "Wednesday", phase: "Myth",
+    title: "The myth",
+    hook: "\"We'll just hire another dispatcher.\" Famous last words.",
+    goal: "Education",
+    format: "Carousel · 3 slides",
+    slides: [
+      { tone: "light", h: "Hook", body: "\"We'll just hire another dispatcher.\"\n\n<b>Famous last words.</b>\n\nLet's run the actual math." },
+      { tone: "blue-dark", h: "Real numbers", body: "One full-time dispatcher, loaded:\n\n🇬🇧 £24,000 – £32,000\n🇺🇸 $38,000 – $52,000\n🇦🇺 AU$58,000 – $70,000\n\nOne seat. One shift. Five days.\n\nTo cover 24/7, you need <b>4.2 of them.</b>" },
+      { tone: "blue", h: "Truth", body: "Real annual cost of in-house 24/7 dispatch:\n\n<b>£140K+</b> in the UK\n<b>$220K+</b> in the US\n<b>AU$310K+</b> in Australia\n\nWe're not anti-hiring.\n\nWe're anti-math-that-doesn't-work." }
+    ],
+    caption: "Have you ever actually loaded the real number?\n\nMost operators haven't. And that's exactly why the hiring instinct keeps winning over the math.\n\nFor most fleets under 80 vehicles, in-house 24/7 dispatch is structurally impossible to make work.\n\nDay 3 of 7. Swipe the breakdown.",
+    linkedin: "The hiring instinct is the most expensive instinct in this industry.\n\nWhen an operator decides their dispatch is under-resourced, the default move is to hire. Familiar, controllable, feels like ownership.\n\nThen the loaded math arrives. A single dispatcher costs £24K–£32K in the UK, $38K–$52K in the US, AU$58K–$70K in AU — loaded. 24/7 coverage requires 4.2 FTEs minimum. That's £140K–£180K annually in the UK before management overhead, before software, before the seat that turns over in month three.\n\nFor most fleets under 80 vehicles, in-house 24/7 dispatch is structurally uneconomical. Not 'expensive' — uneconomical.\n\nDay 3 of 7."
+  },
+  {
+    n: 4, day: "Thursday", phase: "Human",
+    title: "The humans",
+    hook: "\"Outsourced\" means offshore, scripted, robotic. That's the assumption.",
+    goal: "Trust",
+    format: "Carousel · 2 slides",
+    slides: [
+      { tone: "light", h: "Hook", body: "\"Outsourced\" means offshore, scripted, robotic.\n\nThat's the assumption.\n\n<b>It's also wrong.</b>" },
+      { tone: "blue", h: "Reality", body: "Our floor right now. <b>3:14 AM</b>.\n\n→ 14 agents live\n→ 17 active calls\n→ Average pickup: <b>1.2 rings</b>\n\nTrained on iCabbi, Autocab, Cordic, T Dispatch.\n\nWe are not a bot. We are not a voicemail.\n\nWe are the team your customers think you hired." }
+    ],
+    caption: "When your phone rings at 3 AM, someone here picks up before the second ring.\n\nThat's the entire job.\n\nAnd that one answered call? That's a booking your competitor didn't get.",
+    linkedin: "The biggest objection to outsourced dispatch isn't price. It's the assumption that 'outsourced' means impersonal — scripted agents, offshore call centers, bots reading from a flowchart.\n\nThat assumption is doing a lot of work in this industry, and it's mostly wrong.\n\nOur overnight floor right now: 14 agents live, 17 active calls, average pickup at 1.2 rings. Every agent is trained on the major dispatch platforms and onboarded specifically on each client fleet's geography, account customers, and tone of service.\n\nWhen a regular caller asks for 'the usual driver to the usual address,' our agent knows what that means. Because we've made it our job to know.\n\nDay 4 of 7."
+  },
+  {
+    n: 5, day: "Friday", phase: "Proof",
+    title: "The proof",
+    hook: "They were losing 31% of weekend calls. Six weeks later, turning down work.",
+    goal: "Lead-gen warmup",
+    format: "Carousel · 3 slides",
+    slides: [
+      { tone: "light", h: "Hook", body: "They were losing <b>31% of weekend calls</b>.\n\nSix weeks later, they were <b>turning down work</b>.\n\nHere's exactly what happened." },
+      { tone: "blue-dark", h: "Starting point", body: "<b>The client:</b> 42-vehicle operator. North West UK.\n\n<b>The problem:</b>\n→ Weekend answer rate: 69%\n→ Drivers idle 9pm – midnight\n→ Bookings drifting to two competitors\n\nWe didn't change pricing. Didn't change drivers. Didn't touch the app.\n\n<b>We just answered the phone.</b>" },
+      { tone: "blue", h: "Result", body: "Week 1: <b>94%</b>\nWeek 4: <b>99.2%</b>\nWeek 6: <b>their problem flipped.</b>\n\nThey couldn't crew the bookings we were funnelling through.\n\nThat's uncaptured revenue, captured." }
+    ],
+    caption: "Read that again. Their problem went from \"we're losing customers\" to \"we don't have enough drivers.\"\n\nThat's what 6 weeks of properly answered calls actually does.\n\nWant to know what your number looks like? Stay with us tomorrow.",
+    linkedin: "A case study worth sharing, with permission and details slightly anonymized:\n\nA 42-vehicle operator in the North West engaged us in February. Presenting problem looked like customer service — weekend answer rate at 69%, complaints rising, drivers reporting idle time during peak hours.\n\nThe actual problem was structural. In-house dispatch couldn't absorb peak volume between 21:00–02:00. Customers who couldn't get through called the next number. Two local competitors were absorbing the overflow.\n\nWe didn't touch their pricing, driver pool, booking app, or operational model. We answered the phone.\n\n→ Week 1: answer rate to 94%\n→ Week 4: 99.2% sustained\n→ Week 6: booking volume exceeded available driver capacity\n\nMost operators who think they have a customer service problem actually have a captured-vs-uncaptured-demand problem.\n\nDay 5 of 7."
+  },
+  {
+    n: 6, day: "Saturday", phase: "Authority",
+    title: "The industry take",
+    hook: "The taxi industry spent ten years optimizing the ride.",
+    goal: "Thought leadership",
+    format: "Carousel · 2 slides",
+    slides: [
+      { tone: "blue", h: "Hook", body: "The taxi industry spent <b>ten years optimizing the ride</b>.\n\nAlmost nobody optimized the booking." },
+      { tone: "light", h: "Argument", body: "Apps got slicker. Payments faster. Tracking tighter. Software smarter.\n\nThen a customer picks up the phone and hits the same broken experience from 2010.\n\n<b>Ring. Ring. Voicemail. Hang up. Next number.</b>\n\nThe next real edge isn't another app feature.\n\nIt's answering every inbound in under 20 seconds." }
+    ],
+    caption: "Most operators are still trying to win the ride.\n\nThe fight already moved.\n\nAgree or push back — what do you think the next edge is?",
+    linkedin: "A working thesis I want to put forward:\n\nThe taxi industry has spent the last decade optimizing the ride. Apps got faster. Payments smoother. Driver tracking tighter. Fleet management software smarter. The in-vehicle and post-trip experience have both been genuinely transformed.\n\nThe pre-ride experience — what happens when a customer tries to book — has barely moved.\n\nFor most independent and regional operators outside the major rideshare apps, the phone is still the dominant booking channel. And the phone experience in 2026 looks almost identical to 2010.\n\nThe next real competitive edge in this industry isn't another app feature. It's making sure every inbound is answered, qualified, and dispatched in under 20 seconds.\n\nThat's not customer service. That's growth strategy.\n\nDay 6 of 7."
+  },
+  {
+    n: 7, day: "Sunday", phase: "CTA",
+    title: "The invitation",
+    hook: "If you've read this far, your phone is probably still ringing.",
+    goal: "Lead generation",
+    format: "Carousel · 3 slides",
+    slides: [
+      { tone: "light", h: "Hook", body: "If you've read this far,\n\nyour phone is probably <b>still ringing</b>.\n\nLet's fix that." },
+      { tone: "blue-dark", h: "Week recap", body: "<b>7 days. One argument.</b>\n\n→ Missed calls are the industry's most expensive invisible cost\n→ Your weakest hours are your most profitable ones\n→ In-house 24/7 doesn't add up for most fleets\n→ Outsourced doesn't mean offshored\n→ ROI shows up in 6 weeks\n→ The next edge is the booking, not the ride" },
+      { tone: "blue", h: "Offer", body: "<b>Free 7-day call audit</b>\n\nWe track every inbound on your line for 7 days and send you:\n\n→ Your real answer rate\n→ Your three weakest hours\n→ Your estimated monthly revenue leak\n\nNo pitch deck. No commitment.\n\nDM us <b>\"AUDIT\"</b> — we'll send the details today." }
+    ],
+    caption: "If the leak is small, we'll tell you and walk away.\n\nIf it's big, you'll decide what to do with it.\n\nCurious what your actual answer rate is?\n\nDM \"AUDIT\" or tap the link in bio.",
+    linkedin: "Closing out the 7-day series.\n\nThe argument across the week:\n\n1. Missed calls are the most expensive invisible line item in a taxi business.\n2. Every fleet has three structural weak hours — also the most profitable ones.\n3. In-house 24/7 dispatch is uneconomical for most fleets under 80 vehicles.\n4. Outsourced doesn't mean offshore, scripted, or impersonal.\n5. ROI on dispatch outsourcing shows up in weeks, not quarters.\n6. The next competitive edge is the booking, not the ride.\n\nIf any of this resonated, here's a concrete next step.\n\nWe're offering a free 7-day call audit to qualified operators. We track every inbound call on your line for one week and produce a short report covering your real answer rate, three weakest hours, and estimated monthly revenue leak.\n\nNo obligation. Best fit: 25+ vehicles where phone is still a primary booking channel.\n\nDM 'AUDIT' or comment below."
+  }
+];
+
+const arcFlow = document.getElementById("arc-flow");
+DAYS.forEach((d, i) => {
+  const node = document.createElement("div");
+  node.className = "arc-node";
+  node.dataset.idx = i;
+  node.innerHTML = `
+    <div class="arc-circle">${String(d.n).padStart(2, '0')}</div>
+    <div class="arc-phase">${d.phase}</div>
+    <div class="arc-day">${d.day.slice(0,3)}</div>
+  `;
+  node.addEventListener("click", () => openModal(i));
+  arcFlow.appendChild(node);
+});
+
+const daysGrid = document.getElementById("days-grid");
+DAYS.forEach((d, i) => {
+  const card = document.createElement("div");
+  card.className = "day-card";
+  card.innerHTML = `
+    <div class="day-card-header">
+      <div class="day-num-block">
+        <span class="day-num">${String(d.n).padStart(2, '0')}</span>
+        <span class="day-num-suffix">/ 07</span>
+      </div>
+      <div class="day-phase">${d.phase}</div>
+    </div>
+    <div class="day-card-body">
+      <div class="day-weekday">${d.day}</div>
+      <h3 class="day-title">${d.title}</h3>
+      <p class="day-hook">${d.hook}</p>
+      <div class="day-meta">
+        <span class="day-meta-tag">${d.format}</span>
+        <span class="day-meta-arrow">→</span>
+      </div>
+    </div>
+  `;
+  card.addEventListener("click", () => openModal(i));
+  daysGrid.appendChild(card);
+});
+
+const backdrop = document.getElementById("modal-backdrop");
+const modal = document.getElementById("modal");
+
+function openModal(i) {
+  const d = DAYS[i];
+  const colClass = d.slides.length === 2 ? "cols-2" : "cols-3";
+
+  const slidesHtml = d.slides.map((s, si) => `
+    <div class="slide-mock ${s.tone}">
+      <div class="slide-counter">${s.h}</div>
+      <div class="slide-content">${s.body}</div>
+      <div class="slide-footer">
+        <span>CabCall</span>
+        <span>${String(si+1).padStart(2,'0')} / ${String(d.slides.length).padStart(2,'0')}</span>
+      </div>
+    </div>
+  `).join("");
+
+  modal.innerHTML = `
+    <div class="modal-header">
+      <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
+      <div class="modal-header-inner">
+        <div class="modal-day-tag">Day ${String(d.n).padStart(2,'0')} · ${d.day} · ${d.phase}</div>
+        <h2 class="modal-title">${d.title}</h2>
+        <p class="modal-hook">${d.hook}</p>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="meta-grid">
+        <div class="meta-cell"><div class="meta-cell-label">Format</div><div class="meta-cell-value">${d.format}</div></div>
+        <div class="meta-cell"><div class="meta-cell-label">Goal</div><div class="meta-cell-value">${d.goal}</div></div>
+        <div class="meta-cell"><div class="meta-cell-label">Phase</div><div class="meta-cell-value">${d.phase}</div></div>
+        <div class="meta-cell"><div class="meta-cell-label">Channels</div><div class="meta-cell-value">FB · IG · LI</div></div>
+      </div>
+
+      <div class="modal-section-label">Carousel preview</div>
+      <div class="slides-row ${colClass}">${slidesHtml}</div>
+
+      <div class="modal-section-label">Caption</div>
+      <div class="platform-tabs">
+        <button class="platform-tab active" data-platform="ig" onclick="switchPlatform(${i}, 'ig')">Instagram / Facebook</button>
+        <button class="platform-tab" data-platform="li" onclick="switchPlatform(${i}, 'li')">LinkedIn</button>
+      </div>
+      <div class="caption-block">
+        <div class="caption-text" id="caption-text">${d.caption}</div>
+      </div>
+    </div>
+  `;
+
+  backdrop.classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal() {
+  backdrop.classList.remove("active");
+  document.body.style.overflow = "";
+}
+
+function switchPlatform(i, platform) {
+  const d = DAYS[i];
+  document.querySelectorAll(".platform-tab").forEach(t => t.classList.remove("active"));
+  document.querySelector(`.platform-tab[data-platform="${platform}"]`).classList.add("active");
+  document.getElementById("caption-text").innerText = platform === "ig" ? d.caption : d.linkedin;
+}
+
+backdrop.addEventListener("click", (e) => {
+  if (e.target === backdrop) closeModal();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeModal();
+});
+</script>
+</body>
+</html>
